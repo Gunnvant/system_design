@@ -33,4 +33,10 @@ Once a race condition is discovered it can be tackled by:
 
 - In case one needs to listen to many channels one can make use of [range](./go_routines/channels/unbuffered_range.go)
 
-### System Calls
+### [System Calls](./sys_calls/)
+
+**1. Intro**:
+
+- Use `os` to create os agnostic programs
+- Use `Stdin`, `Stdout`, `Stderr` when creating CLI applications to make go applications behave like standard cli apps.
+
