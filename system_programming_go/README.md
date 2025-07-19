@@ -43,3 +43,8 @@ Once a race condition is discovered it can be tackled by:
 - It can be run as `./count alex golang error | grep odd`. Since we are using stdout, we can interact with grep.
 
 - To make code testable use Options [design pattern](./sys_calls/intro/cli_testable.go)
+
+**2. File and Directory Operations**:
+
+- Use `os.WalkDir` to recursively traverse the files.
+- Use memory mapping of files to work with large files, this allows to read specific parts of a large file into memory and one can do operations in memory and then write the changed data back to the disk.
