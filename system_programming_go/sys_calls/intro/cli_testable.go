@@ -9,6 +9,7 @@ import (
 type Config struct {
 	OutStream io.Writer
 }
+
 type Option func(cfg *Config) error
 
 func WithOutputStream(stream io.Writer) Option {
